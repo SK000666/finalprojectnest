@@ -1,0 +1,34 @@
+
+:root{--accent:#ff7e5f;--accent-2:#feb47b;--text-dark:#222}
+
+.about-hero{
+  background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url('https://wallpapers.com/images/hd/food-4k-m37wpodzrcbv5gvw.jpg');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  min-height:600px;
+  display:flex;
+  align-items:center;
+}
+.hero-overlay{width:100%;background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.18));}
+.hero-inner{padding:80px 1rem;max-width:1100px;margin:0 auto;text-align:left}
+.hero-title{font-size:2.4rem;margin:0 0 0.5rem;font-weight:700}
+.hero-sub{font-size:1.05rem;margin-bottom:1rem;opacity:0.95}
+.hero-cta .btn{margin-right:0.6rem}
+.about-values{padding:48px 1rem}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:1100px;margin:0 auto}
+.value{background:#fff;padding:1.4rem;border-radius:10px;box-shadow:0 6px 20px rgba(34,34,34,0.06);text-align:center}
+.value-icon{font-size:1.8rem;margin-bottom:.5rem}
+.value h3{margin:0.3rem 0}
+.value p{color:#555;font-size:0.95rem}
+
+.about-cta{padding:32px 1rem;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#1e1c1c;margin-top:32px}
+.about-cta .cta-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.about-cta h3{margin:0;font-weight:700}
+.btn-accent{background:#605656;color:var(--accent);padding:.6rem 1rem;border-radius:8px;font-weight:600}
+
+@media (max-width:991px){
+  .values-grid,.team-grid{grid-template-columns:repeat(1,1fr)}
+  .hero-inner{text-align:center;padding:60px 1rem}
+  .about-cta .cta-inner{flex-direction:column;align-items:center;text-align:center}
+}

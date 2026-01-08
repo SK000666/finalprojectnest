@@ -1,0 +1,46 @@
+<div class="container mt-5">
+  <div class="card shadow-lg border-0">
+    <div class="row g-0 align-items-center">
+
+      <div class="col-md-6 p-4 text-center">
+        <img 
+          [src]="product.image" 
+          class="img-fluid rounded-4 shadow-sm recipe-img"
+          alt="{{product.name}}">
+      </div>
+
+      <div class="col-md-6 p-4">
+        <h2 class="fw-bold mb-3">{{ product.name }}</h2>
+
+        <div class="mb-3">
+          <span class="badge bg-success me-2">{{ product.cuisine }}</span>
+          <span class="badge bg-warning text-dark">{{ product.mealType }}</span>
+        </div>
+
+        <p class="text-muted mb-4">
+          ⭐ {{ product.rating }} / 5 · {{ product.caloriesPerServing }} kcal per serving
+        </p>
+
+        <h5 class="fw-semibold">🧂 Ingredients</h5>
+        <p>{{ product.ingredients }}</p>
+
+        <h5 class="fw-semibold mt-3">👨‍🍳 Instructions</h5>
+        <p>{{ product.instructions }}</p>
+
+        <div class="row mt-4">
+          <div class="col-6">
+            <p><strong>⏱ Prep:</strong> {{ product.prepTimeMinutes }} mins</p>
+          </div>
+          <div class="col-6">
+            <p><strong>🔥 Cook:</strong> {{ product.cookTimeMinutes }} mins</p>
+          </div>
+        </div>
+
+        <a routerLink="/foodrecipe" class="btn btn-outline-secondary mt-3">
+          ← Back to Recipes
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>

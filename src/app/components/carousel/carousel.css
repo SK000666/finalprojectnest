@@ -1,0 +1,10 @@
+.homeimage {
+background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url('https://wallpapers.com/images/hd/food-4k-spdnpz7bhmx4kv2r.jpg');
+background-size: cover;
+background-position: center;
+height: 90vh;
+display: flex;
+align-items: center;
+color: white;
+}

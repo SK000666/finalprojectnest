@@ -1,0 +1,8 @@
+.card h-100 shadow-sm border-0{ background-image: url(https://images6.alphacoders.com/913/thumb-1920-913663.jpg);}
+.contact-hero{background:linear-gradient(180deg, rgba(255,126,95,0.08), rgba(254,180,123,0.04));}
+.contact-hero .display-6{color:var(--text-dark,#222)}
+.card{border-radius:12px}
+.contact-form .form-control{border-radius:8px;padding:.9rem .75rem}
+.contact-form .btn-primary{background:linear-gradient(90deg,var(--accent,#ff7e5f),var(--accent-2,#feb47b));border:0}
+.map-placeholder{background:linear-gradient(135deg,#f0f0f0,#fafafa);height:160px;display:flex;align-items:center;justify-content:center;color:#888;font-weight:600}
+@media (max-width:991px){.contact-hero .display-6{font-size:1.6rem}.map-placeholder{height:140px}}
